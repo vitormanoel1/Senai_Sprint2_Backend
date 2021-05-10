@@ -66,7 +66,7 @@ namespace Senai.Peoples.WebApi.Controllers
             if (FuncionarioBuscado == null)
             {
                 // Caso não seja encontrado, retorna um status code 404 - Not Found com a mensagem personalizada
-                return NotFound("Nenhum funcionario foi encontrado!!");
+                return NotFound("Nenhum funcionario foi encontrado!");
             }
 
             // Caso seja encontrado, retorna o funcionario buscado com um status code 200 - Ok

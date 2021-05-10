@@ -1,4 +1,5 @@
-﻿using Senai.Peoples.WebApi.Domains;
+﻿//using Senai.Peoples.WebApi.Domains;
+using Senai.Peoples.WebApi.Domains;
 using Senai.Peoples.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Senai.Peoples.WebApi.Repositories
         /// Initial catalog = Nome do banco de dados
         /// User Id=sa; pwd=senai@132 = Faz a autenticação com o usuário do SQL Server, passando o logon e a senha
         /// </summary>
-        private string StringConexao = "Data Source=LAPTOP-DSQUFTLB\\SQLEXPRESS; initial catalog=M_Peoples; user Id=sa; pwd=senai@132";
+        private string StringConexao = "Data Source=LAPTOP-DSQUFTLB\\SQLEXPRESS initial catalog=M_Peoples; user Id=sa; pwd=senai@132";
 
         /// <summary>
         /// Atualiza um funcionario passando o id pelo recurso (URL)
@@ -171,7 +172,7 @@ namespace Senai.Peoples.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
                 // Declara a instrução a ser executada
-                string querySelectAll = "SELECT IdFuncionario, NomeFuncio, sobrenome FROM Funcionarios";
+                string querySelectAll = "SELECT IdFuncionario, NomeFuncio, Sobrenome FROM Funcionarios";
 
                 // Abre a conexão com o banco de dados
                 con.Open();

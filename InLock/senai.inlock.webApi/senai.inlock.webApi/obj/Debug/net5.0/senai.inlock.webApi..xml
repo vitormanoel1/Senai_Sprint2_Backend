@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.inlock.webApi.</name>
+    </assembly>
+    <members>
+        <member name="P:senai.inlock.webApi_.Controller.EstudiosController._estudioRepository">
+            <summary>
+            objeto _estudioRepository que irá receber todos os métodos definidos na interface IEstudioRepository
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controller.EstudiosController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controller.EstudiosController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            http://localhost:5000/api/estudios
+        </member>
+        <member name="M:senai.inlock.webApi_.Controller.EstudiosController.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controller.EstudiosController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controller.TipoUsuariosController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            http://localhost:5000/api/tipoUsuarios
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.JogosController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.JogosController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            http://localhost:5000/api/jogos
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.EstudioRepositiry.Atualizar(System.Int32,senai.inlock.webApi_.Domain.EstudioDomain)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="estudioAtualizado"></param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.EstudioRepositiry.BuscarPorId(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.EstudioRepositiry.Cadastrar(senai.inlock.webApi_.Domain.EstudioDomain)">
+            <summary>
+            
+            </summary>
+            <param name="novoEstudio"></param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.EstudioRepositiry.Deletar(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.EstudioRepositiry.ListarTodos">
+            <summary>
+            lista todos os estudios 
+            </summary>
+            <returns> uma lista de estudios</returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interface.IJogosRepository.ListarTodos">
+            <summary>
+            lista todos os jogos
+            </summary>
+            <returns> uma lista jogos</returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interface.IJogosRepository.BuscarPorId(System.Int32)">
+            <summary>
+            busca um jogo através do seu id 
+            </summary>
+            <param name="id"> id do jogo que será buscado</param>
+            <returns> um objeto jogo que foi buscado</returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interface.IJogosRepository.AtualizarIdUrl(System.Int32,senai.inlock.webApi_.Domain.JogosDomain)">
+            <summary>
+            atualiza um jojo existente passando o id pela url da requisição 
+            </summary>
+            <param name="id"> id do jogo que será atualizado</param>
+            <param name="jogoAtualizado"> objeto genero que com as novas informações</param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interface.IJogosRepository.Cadastrar(senai.inlock.webApi_.Domain.JogosDomain)">
+            <summary>
+            
+            </summary>
+            <param name="novoJogo"></param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interface.IJogosRepository.Deletar(System.Int32)">
+            <summary>
+            deleta um jogo existente
+            </summary>
+            <param name="id"> id do gênero que será deletado</param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interface.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            verifica se login e senha estao corretos
+            </summary>
+            <param name="email"> email do usuario</param>
+            <param name="senha"> senha do usuario</param>
+            <returns>UsuarioDomain</returns>
+        </member>
+    </members>
+</doc>
